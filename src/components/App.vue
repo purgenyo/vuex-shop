@@ -28,6 +28,7 @@
 		created() {
 			let delay = 15 * 1000;
 			let store = this.$store;
+			this.$store.dispatch('products/getProductsData');
 			setTimeout(function request() {
 				store.dispatch('products/getProductsData');
 				setTimeout(request, delay);

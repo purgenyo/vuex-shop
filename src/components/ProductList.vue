@@ -49,9 +49,6 @@
 		methods: mapActions('cart', [
 			'addProductToCart'
 		]),
-		created() {
-			this.$store.dispatch('products/getProductsData');
-		},
 		mixins: [
 			filters,
 		],
